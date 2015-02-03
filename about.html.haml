@@ -1,0 +1,50 @@
+---
+layout: project
+title: About
+---
+
+
+/ =========================Masthead=========================
+%header.jumbotron.subhead#overview
+  .row
+    .col-md-12
+      %h1 Æsh
+      %p.lead Æsh is a configurable, extendable, flexible Java Terminal API
+%br
+%br
+.row
+  .col-sm-12
+    .well
+      .row
+        .col-md-6
+          %h4 Configurable
+          %p Almost every feature in Æsh is possible to either disable/enable or extend. All the features described here are just a simple overview, we recommend that you look at the documentation for more info regarding the different subjects.
+          %br
+          %h4 Command Line Parser
+          %p Æsh provide a sophisticated command line parser that will automatically inject the correct value into the specific attribute. It is also possible to specify a validator that will validate the value before it is passed to the specific attribute.
+          %br
+          %h4 Editor Support
+          %p Æsh support both VI and EMACS editing mode. Its also possible to enable your own custom editing mode if wanted. Æsh can be configured to read then +inputrc+ file on startup for custom editing properties. - this can all be disabled if wanted.
+          %br
+          %h4 Pipeline and Redirect
+          %p Æsh support pipeline and redirection similar to POSIX terminals. The different out/err/in streams are provided in the API. This can be disabled if needed.
+          %br
+          %h4 Variables
+          %p Æsh provide variable support similar to POSIX shells. The variables can be managed during runtime with the export command and/or from a file during startup.
+        .col-md-6
+          %h4 Flexible
+          %p Æsh provide two different public APIs that for different usecases. One high level API when you need to create commands withing a certain specification and ruls and one low level API where you get full access to the streams and can parse/configure it do your liking.
+          %br
+          %h4 Completion
+          %p Æsh also provide automatic completions based on default or custom rules. Æsh have several built-in completors for common object types which can used or overridden by the developer.
+          %br
+          %h4 Built-in Commands
+          %p Æsh provides a few built-in commands
+          %ul
+            %li alias
+            %li unalias
+            %li man
+          %p Æsh provide history support, both in-memory and to file. All can be enabled and disabled.
+          %br
+          %h4 Undo, Redo, Masking, Paste buffer, etc
+          %p  yes we have that as well....

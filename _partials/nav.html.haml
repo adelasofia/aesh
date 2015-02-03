@@ -7,12 +7,12 @@
         %span.icon-bar
     .collapse.navbar-collapse#navbar-1
       %ul.nav.navbar-nav
-        %li{:class=>"#{'active' if page.output_path.start_with?('/index') }" }<
-          %a(href="#{site.base_url}/index.html") Home
+        %li{:class=>"#{'active' if page.output_path.start_with?('/homepage') }" }<
+          %a(href="#{site.base_url}/homepage.html") Home
         %li{:class=>"#{'active' if page.output_path.start_with?('/about') }" }<
           %a(href="#{site.base_url}/about.html") About
         %li{:class=>"#{'active' if page.output_path.start_with?('/news') }" }<
-          %a(href="#{site.base_url}/news.html") News
+          %a(href="#{site.base_url}/news/index.html") News
         %li{:class=>"#{'active' if page.output_path.start_with?('/extensions') }" }<
           %a(href="#{site.base_url}/extensions.html") Extensions
         %li{:class=>"#{'active' if page.output_path.start_with?('/downloads') }" }<
@@ -20,7 +20,7 @@
         %li{:class=>"#{'active' if page.output_path.start_with?('/docs') }" }<
           %a(href="#{site.base_url}/docs.html") Documentation
         %li{:class=>"#{'active' if page.output_path.start_with?('/source') }" }<
-          %a(href="#{site.base_url}/source.html") Source Code
+          %a(href="http://github.com/aeshell/aesh") Source Code
         %li{:class=>"#{'active' if page.output_path.start_with?('/contribute') }" }<
           %a(href="#{site.base_url}/contribute.html") Contribute
 

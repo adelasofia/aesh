@@ -1,0 +1,11 @@
+---
+layout: project
+---
+
+#equalHeightsLayout
+  #leftcol.col-sm-3.well
+    = partial( page.docs_partial.nil? ? 'docs.html.haml' : page.docs_partial  , { "real_page" => page } )
+
+  #maincol.col-sm-9
+    .col-md-12
+      ~ content

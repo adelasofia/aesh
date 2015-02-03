@@ -1,0 +1,8 @@
+%h2 Docs
+.col-md-12
+  %ul.list-unstyled
+    - site.pages.select{|p|p.output_path =~ /^\/docs\//}.each do |page|
+      %li
+        %i.icon-li.icon-chevron-sign-right
+        %a{:href => "#{page.output_path}"}
+          =page.title
