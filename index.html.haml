@@ -11,23 +11,7 @@ title: Home
       %h1 Æsh
       %p.lead If you want to write command-based java programs!
 .row
-  .col-sm-6
-    .well
-      .row
-        .col-sm-12
-          %h2 Latest News
-          #blogDiv
-          :javascript
-            $(document).ready(function () {
-              $('#blogDiv').FeedEk({
-                FeedUrl: 'http://planet.jboss.org/xml/all?type=atom',
-                MaxCount: 6,
-                ShowDesc: false,
-                CharacterLimit: 200
-              });
-            });
-
-
+  = partial( 'latest-news.html.haml', {"real_page" => page} )
   .col-sm-5
     .row
       .col-sm-12
@@ -39,7 +23,7 @@ title: Home
         .well
           %h2 Features
           %div
-            %ul.icons-ul
+            %ul(style="list-style:none;")
               %li
                 %i.icon-li.icon-chevron-sign-right>
                 Line editing
