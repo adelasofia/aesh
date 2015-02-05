@@ -8,14 +8,14 @@ title: Æsh News
   - for post in page.posts
     .col-sm-12.well.post-bg
       = partial('post.html.haml', {"post" => post})
-  .pagination.no-bottom-margin
-    %ul
-      %li{:class=>('disabled' unless page.posts.previous_page)}
-        %a{:href=>page.posts.previous_page ? "#{site.base_url}#{page.posts.previous_page.url}" : '#'} &laquo; Newer
-      %li
-        %a(href="#")<= "Page " + (page.posts.current_page_index + 1).to_s + " of " + page.posts.pages.size.to_s
-      %li{:class=>('disabled' unless page.posts.next_page)}
-        %a{:href=>page.posts.next_page ? "#{site.base_url}#{page.posts.next_page.url}" : '#'} Older &raquo;
+
+  %ul.pagination.no-bottom-margin
+    %li{:class=>('disabled' unless page.posts.previous_page)}
+      %a{:href=>page.posts.previous_page ? "#{site.base_url}#{page.posts.previous_page.url}" : '#'} &laquo; Newer
+    %li
+      %a(href="#")<= "Page " + (page.posts.current_page_index + 1).to_s + " of " + page.posts.pages.size.to_s
+    %li{:class=>('disabled' unless page.posts.next_page)}
+      %a{:href=>page.posts.next_page ? "#{site.base_url}#{page.posts.next_page.url}" : '#'} Older &raquo;
 .col-md-4
   .row
     = partial('latest-news-sidebar.html.haml')
